@@ -88,13 +88,14 @@ If no output format is specified, CSV is used by default.
 
 ## Project Structure
 
-cv-analyzer/
+```cv-analyzer/
 ├─ response_schema.json  # JSON schema for expected CV analysis format or replace with your own
 ├─ main.py        # Main script
 ├─ requirements.txt      # Project dependencies
-├─ .env                  # API key storage (not included in repository)
+├─ .env.example          # example for .env file
 ├─ README.md             # Project documentation
 └─ cv-folder/ # you can add pdf files in here or use you own folder
+```
 
 ## Customization
 
