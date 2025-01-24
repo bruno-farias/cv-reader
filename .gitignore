@@ -1,1 +1,6 @@
+.DS_Store
+
 cv-reader/
+.env
+cv_analysis.csv
+cv_analysis.json

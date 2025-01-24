@@ -1,0 +1,192 @@
+{
+  "name" : "cv_response_schema",
+  "schema" : {
+    "type" : "object",
+    "properties" : {
+      "programing_languages" : {
+        "type" : "array",
+        "description" : "List of programming languages known.",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string",
+              "description" : "Name of the programming language."
+            },
+            "years_xp" : {
+              "type" : "string",
+              "description" : "Years of experience with the programming language."
+            }
+          },
+          "required" : [
+            "name",
+            "years_xp"
+          ],
+          "additionalProperties" : false
+        }
+      },
+      "languages" : {
+        "type" : "array",
+        "description" : "List of spoken languages.",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string",
+              "description" : "Name of the language."
+            },
+            "proeficiency" : {
+              "type" : "string",
+              "description" : "Level of proficiency in the language."
+            }
+          },
+          "required" : [
+            "name",
+            "proeficiency"
+          ],
+          "additionalProperties" : false
+        }
+      },
+      "work_experiences" : {
+        "type" : "array",
+        "description" : "List of work experiences.",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "company_name" : {
+              "type" : "string",
+              "description" : "Name of the company."
+            },
+            "period" : {
+              "type" : "string",
+              "description" : "Duration of employment."
+            },
+            "role" : {
+              "type" : "string",
+              "description" : "Job role/title at the company."
+            },
+            "info" : {
+              "type" : "string",
+              "description" : "Quick summary of the job, max: 150 chars"
+            }
+          },
+          "required" : [
+            "company_name",
+            "period",
+            "role",
+            "info"
+          ],
+          "additionalProperties" : false
+        }
+      },
+      "education" : {
+        "type" : "array",
+        "description" : "List of educational qualifications.",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "school_name" : {
+              "type" : "string",
+              "description" : "Name of the school."
+            },
+            "period" : {
+              "type" : "string",
+              "description" : "Duration of study."
+            },
+            "summary" : {
+              "type" : "string",
+              "description" : "Summary of the studies or degree obtained."
+            }
+          },
+          "required" : [
+            "school_name",
+            "period",
+            "summary"
+          ],
+          "additionalProperties" : false
+        }
+      },
+      "soft_skills" : {
+        "type" : "array",
+        "description" : "List of soft skills.",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "skill" : {
+              "type" : "string",
+              "description" : "Name of the soft skill."
+            }
+          },
+          "required" : [
+            "skill"
+          ],
+          "additionalProperties" : false
+        }
+      },
+      "name" : {
+        "type" : "string",
+        "description" : "Full name of the individual."
+      },
+      "email" : {
+        "type" : "string",
+        "description" : "Email address of the individual."
+      },
+      "phone_number" : {
+        "type" : "string",
+        "description" : "Phone number of the individual."
+      },
+      "city" : {
+        "type" : "string",
+        "description" : "City of residence."
+      },
+      "github_url" : {
+        "type" : "string",
+        "description" : "GitHub profile URL."
+      },
+      "school_finished" : {
+        "type" : "boolean",
+        "description" : "Indicates whether the individual has finished school."
+      },
+      "nationality" : {
+        "type" : "string",
+        "description" : "Nationality of the individual."
+      },
+      "age" : {
+        "type" : "integer",
+        "description" : "Age of the individual."
+      },
+      "work_background" : {
+        "type" : "string",
+        "description" : "Industries and kinds of jobs the individual has had so far."
+      },
+      "experience_level" : {
+        "type" : "string",
+        "description" : "Years working with IT.",
+        "enum" : [
+          "junior",
+          "mid",
+          "senior"
+        ]
+      }
+    },
+    "required" : [
+      "programing_languages",
+      "languages",
+      "work_experiences",
+      "education",
+      "soft_skills",
+      "name",
+      "email",
+      "phone_number",
+      "city",
+      "github_url",
+      "school_finished",
+      "nationality",
+      "age",
+      "work_background",
+      "experience_level"
+    ],
+    "additionalProperties" : false
+  },
+  "strict" : true
+}
